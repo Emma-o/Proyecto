@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -10,9 +10,10 @@
         android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/jf"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/descImg"
+        app:srcCompat="@drawable/jf" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -25,6 +26,7 @@
             android:id="@+id/imageView5"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:contentDescription="@string/descImg"
             app:srcCompat="@drawable/usu" />
 
         <EditText
@@ -32,10 +34,10 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Usuario"
             android:gravity="center"
-            />
+            android:hint="@string/txtUsu"
+            android:inputType="textPersonName"
+            android:autofillHints="" tools:targetApi="o"/>
 
     </LinearLayout>
     <LinearLayout
@@ -49,6 +51,7 @@
             android:id="@+id/imageView2"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:contentDescription="@string/descImg"
             app:srcCompat="@drawable/cs" />
 
         <EditText
@@ -56,10 +59,10 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
-            android:hint="Contraseña"
             android:gravity="center"
-            />
+            android:hint="@string/txtCont"
+            android:inputType="textPassword"
+            android:autofillHints="" tools:targetApi="o"/>
 
     </LinearLayout>
 
@@ -69,17 +72,18 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_marginTop="30dp">
+
         <Button
             android:id="@+id/button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Entrar" />
+            android:text="@string/btnEntrar" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Salir" />
+            android:text="@string/btnRegis" />
     </LinearLayout>
 
 
